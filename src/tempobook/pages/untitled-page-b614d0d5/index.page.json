@@ -1,0 +1,17 @@
+{
+  "id": "b614d0d5-330e-4f6c-942b-d896e59e9aba",
+  "name": "Untitled Page",
+  "storyboards": [
+    {
+      "id": "29cbd71d-4067-477a-83df-53629d6a8b51",
+      "type": "APPLICATION",
+      "route": "/",
+      "width": 1440,
+      "height": 1024,
+      "x": 0,
+      "y": -3.704191353960937,
+      "zIndex": 0
+    }
+  ],
+  "config_version": "1.0.0"
+}

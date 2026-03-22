@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Scroll lock when card modal is open */
+body.no-scroll {
+  overflow: hidden;
+}
+
+  @layer base {
+    :root {
+      --background: 240 15% 4%;
+      --foreground: 240 10% 94%;
+
+      --card: 240 15% 4%;
+      --card-foreground: 240 10% 94%;
+
+      --popover: 240 15% 4%;
+      --popover-foreground: 240 10% 94%;
+
+      --primary: 240 10% 94%;
+      --primary-foreground: 240 15% 4%;
+
+      --secondary: 228 60% 18%;
+      --secondary-foreground: 240 10% 94%;
+
+      --muted: 228 60% 18%;
+      --muted-foreground: 240 10% 60%;
+
+      --accent: 228 60% 18%;
+      --accent-foreground: 240 10% 94%;
+
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 240 10% 94%;
+
+      --border: 228 40% 18%;
+      --input: 228 40% 18%;
+      --ring: 240 10% 60%;
+
+      --radius: 0.5rem;
+
+      --sidebar-background: 240 15% 6%;
+      --sidebar-foreground: 240 10% 94%;
+      --sidebar-primary: 43 49% 55%;
+      --sidebar-primary-foreground: 240 15% 4%;
+      --sidebar-accent: 228 40% 18%;
+      --sidebar-accent-foreground: 240 10% 94%;
+      --sidebar-border: 228 40% 18%;
+      --sidebar-ring: 43 49% 55%;
+    }
+  }
+
+  @layer base {
+    * {
+      @apply border-border;
+    }
+    body {
+      @apply bg-background text-foreground;
+      background: #080810;
+      color: #E8E8F0;
+    }
+  }
+
+/* Dhiraj Studio global styles */
+html {
+  scroll-behavior: smooth;
+  background: #080810;
+}
+
+body.dhiraj-studio {
+  background: #080810;
+  color: #E8E8F0;
+  overflow-x: hidden;
+}
+
+/* Smooth scroll inertia */
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+/* Noise grain overlay */
+body.dhiraj-studio::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 50;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Scrollbar */
+body.dhiraj-studio::-webkit-scrollbar {
+  width: 3px;
+}
+body.dhiraj-studio::-webkit-scrollbar-track {
+  background: #080810;
+}
+body.dhiraj-studio::-webkit-scrollbar-thumb {
+  background: #1A3A6B;
+  border-radius: 2px;
+}
+body.dhiraj-studio::-webkit-scrollbar-thumb:hover {
+  background: #C9A84C;
+}
